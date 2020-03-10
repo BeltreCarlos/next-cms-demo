@@ -1,7 +1,12 @@
 import Head from 'next/head'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  background-color: red;
+`
 
 const Home = () => (
-  <div className="container">
+  <Container className="container">
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -197,7 +202,7 @@ const Home = () => (
         box-sizing: border-box;
       }
     `}</style>
-  </div>
+  </Container>
 )
 
 export default Home
