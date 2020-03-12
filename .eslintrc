@@ -21,6 +21,17 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "off"
   },
+
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        // Disable propTypes errors since we're using TS
+        "react/prop-types": "off"
+      }
+    }
+  ],
+
   "globals": { "React": "writable" },
   "settings": {
     "react": {
